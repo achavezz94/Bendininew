@@ -1,12 +1,12 @@
 <div class="bodycolor">
-<div class="jumbotron">
-	<div  class="container">
-  	</div>
-</div>
+	<div class="jumbotron">
+		<div  class="container">
+  		</div>
+	</div>
 
 
-<a id="homeabout"></a>
-<div class= "homeabout">
+	<a id="homeabout"></a>
+	<div class= "homeabout">
 	<h1>	
 		<a href=""> About Bendini</a>
 	</h1>
@@ -26,6 +26,7 @@
 		</div>
 </div>
 
+<a id="homecollection"></a>
 <div class= "homecollection">
 	<div class="Bendinicollection">
 		<h1>
@@ -45,12 +46,25 @@
 			</p>
 		</div>
 		<p>
-			To see the full collection <a href=""> click here</a>
+			To see the full collection <%=link_to "click here", root_path(:anchor =>"homeabout"), class: "active", id: "item2" %>
 		</p>	
 	</p>
-</div>	
 
 	</div>	
+	
+<a id="homecontact"></a>
+<div class="homecontact">
+
+	<h1 style="float: right; margin-right: 20px;">
+	<%=link_to "Bendini Contact", root_path, class: "active"%>
+	</h1>
+	<p style="float: left;">
+	For the best experience come visit our store, or give us a call. We can also be reached via email!
+	</p>
+	<div class="contactinfo">
+
+	</div>
+</div>	
 
 </div> 
 

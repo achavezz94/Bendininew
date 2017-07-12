@@ -33,23 +33,20 @@
 			<a href=""> Bendini Collection </a>
 		</h1>
 	</div>
-	<div>
     <p style="float: left;">
-		<%=image_tag("mainpage.jpg", size: "350x690", alt: "Example Image", :class => "style_mage")%>
-		<%=image_tag("mainpage.jpg", size: "350x690", alt: "Example Image", :class => "style_mage")%>
+		<%=image_tag("mainpage.jpg", size: "350x690", alt: "Example Image", :class => "style_image")%>
+		<%=image_tag("mainpage.jpg", size: "350x690", alt: "Example Image", :class => "style_image")%>
 		<div class="collectionbody">
   			<p>Bendini has a variety of men's clothing and accessories. Casual cltohing is much more than just a T-shirt and jeans. It's a sense of relaxation and comfort. Since Bendini provides very fashionable clothing, looking good never felt so good. Some of the Brands that Bendini carries are: 
 				<ol>Ed Baker</ol>
 				<ol>Chiari</ol>
 				<ol>Raffi</ol>
 				<ol>And much more!</ol>
+							To see the full collection <%=link_to "click here", root_path(:anchor =>"homeabout"), class: "active", id: "item2" %>
 			</p>
-		</div>
-		<p>
-			To see the full collection <%=link_to "click here", root_path(:anchor =>"homeabout"), class: "active", id: "item2" %>
-		</p>	
 	</p>
 	</div>	
+	<!-- List of brands : ed baker, chiari, raffi , toscano , bresciani , enzo , intl laundry , gianni marcelo heritage 34 jeans  montechiaro and much more -->
 </div>	
 
 <a id="homecontact"></a>
@@ -62,10 +59,49 @@
 	For the best experience come visit our store, or give us a call. We can also be reached via email!
 	</p>
 	<div class="contactinfo">
+		<p>	
+			Bendini Fine Mens Clothing <br>
+			39 North Dean Street<br>
+			Englewood, NJ 07631<br>
+			<br>
+			Tel: 201-596-6935<br>
+			Fax: 201-569-6978<br>
+			<br>
+			Email: Bendiniusa1@hotmail.com<br>
+		</p>
+	</div>
+	
+	<a href="https://www.google.com/maps/place/Bendini+Inc/@40.8949509,-73.9740082,19z/data=!3m1!4b1!4m5!3m4!1s0x89c2f119a4c3755d:0xef08a36a284f89e2!8m2!3d40.8949509!4d-73.973461">
+		<div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: 40.894971, lng: -73.973452};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 17,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmUabYjO_8eNBurt8One-CzLbdYZvbJuQ&callback=initMap">
+    </script>
+
+</a>
+
+<div class="contactinfo">
+			<p style="text-align: center;">Store Hours: Monday to Wednesday: 10AM - 6PM | Thursday: 10AM - 7PM | Friday to Saturday: 10AM - 6PM | Sunday: Closed
+			</p>
+</div>			
+		
+
 
 	</div>
 </div>	
 
 </div> 
 
-<!-- List of brands : ed baker, chiari, raffi , toscano , bresciani , enzo , intl laundry , gianni marcelo heritage 34 jeans  montechiaro and much more -->
+

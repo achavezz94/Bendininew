@@ -10,6 +10,7 @@ $navbar-default-bg: #631616;
 	color: white;
 	font-family: 'lobster', cursive;
 	font-size: 50px;
+	line-height: 35px;
 }
 
 body {
@@ -17,7 +18,7 @@ body {
 	background: #fff2db;
 	}
 
-.navbar-brand,
+
 .navbar-nav li a {
     line-height: 70px;
     height: 70px;
@@ -32,55 +33,28 @@ body {
 	border-radius: 25px;
 }
 
-homeabout {
-	background: #d7dde5;
+.homeabout {
 	height: 850px;
 	margin:20px;
-	border-radius: 25px;
 	padding-top: 25px;
 	
-}
-
-h1 {
-	color: #630909;
-	font-size: 70px;
-	letter-spacing: 2px;
-	font-family: 'Lobster', cursive;
-	text-decoration: underline;
-	text-indent: 50px;
-	padding-top: 50px;
-	padding-left: 50px;
-}
-
-p {
-	font-size: 30px;
-	letter-spacing:2px;
-	font-weight: Bold;
-	padding: 10px;
-	margin-left: 50px;
-	margin-right: 50px;
-	color: black;
-}
-
-
-a {
-	color: inherit;
 }
 
 .style_image {
 	padding-right: 20px;
 
 }
+.homecollection {
+	height: 900px;
+	margin-bottom: 10000000px;
+}
 
 .collectionbody {
 	color: black;
-	font-size:30px;
+	font-size:20px;
 	text-align: center;
 	margin: 20px;
-}
-
-ul {
-	margin: 10px 0;
+	font-weight: Bold;
 }
 
 #item1 {
@@ -89,14 +63,11 @@ ul {
 }
 
 #item2 {
-	font-size: 30px;
+	font-size: 20px;
 	font-weight: Bold;
 	color: black;
+	text-decoration: underline;
 	}
-
-.contactinfo {
-	;	
-}
 
 .homecollection {
 	margin: 50px;
@@ -117,3 +88,34 @@ footer {
    background:#631616; 
    text-align: center;
 }
+
+h1 {
+	color: #630909;
+	font-size: 60px;
+	letter-spacing: 2px;
+	font-family: 'Lobster', cursive;
+	text-decoration: underline;
+	text-indent: 50px;
+	padding-top: 50px;
+	padding-left: 50px;
+}
+
+p {
+	font-size: 20px;
+	letter-spacing:2px;
+	font-weight: Bold;
+	padding: 10px;
+	margin-left: 50px;
+	margin-right: 50px;
+	color: black;
+}
+
+
+a {
+	color: inherit;
+}
+
+ul {
+	margin: 10px 0;
+}
+

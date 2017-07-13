@@ -94,5 +94,24 @@
 <div class="contactinfo">
 			<p style="text-align: center;">Store Hours: Monday to Wednesday: 10AM - 6PM | Thursday: 10AM - 7PM | Friday to Saturday: 10AM - 6PM | Sunday: Closed
 			</p>
+</div>
+
+<div class="facebook">
+	<p>
+	You can also visit and follow our Facebook page!
+	<%= link_to(image_tag("facebook.jpg", size: "500x500", alt: "Example Image"), "https://www.facebook.com/bendinimenswear/")%>
+	</p>
+
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9&appId=254182094622920";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+
+		  <!-- Your like button code -->
+	<div class="fb-like" data-href="https://www.facebook.com/bendinimenswear/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>	
 </div>			
-		
+			

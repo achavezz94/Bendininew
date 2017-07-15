@@ -37,7 +37,9 @@ body {
 	height: 850px;
 	margin:20px;
 	padding-top: 25px;
-	
+	background-size: 300px;
+	width: device-width;
+	display: inline;	
 }
 
 .style_image {
@@ -46,7 +48,7 @@ body {
 }
 .homecollection {
 	height: 900px;
-	margin-bottom: 10000000px;
+	display: inline;
 }
 
 .collectionbody {
@@ -55,6 +57,7 @@ body {
 	text-align: center;
 	margin: 20px;
 	font-weight: Bold;
+	display: inline;
 }
 
 #item1 {
@@ -67,6 +70,7 @@ body {
 	font-weight: Bold;
 	color: black;
 	text-decoration: underline;
+	display: inline;
 	}
 
 .homecollection {

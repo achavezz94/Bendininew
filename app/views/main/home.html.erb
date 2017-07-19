@@ -25,6 +25,7 @@
 
 </div>
 	
+<section>	
 <a id="homecollection"></a>
 <div class= "homecollection">
 	<div class="Bendinicollection">
@@ -37,7 +38,9 @@
 		<%=image_tag("mainpage.jpg", size: "350x690", alt: "Example Image", :class => "style_image")%>
 	</p>	
 	<div class="collectionbody">
-  			<p>Bendini has a variety of men's clothing and accessories. Casual cltohing is much more than just a T-shirt and jeans. It's a sense of relaxation and comfort. Since Bendini provides very fashionable clothing, looking good never felt so good. Some of the Brands that Bendini carries are: 
+			<div class="collectiondescription"> 
+  			<p>Bendini has a variety of men's clothing and accessories. Casual cltohing is much more than just a T-shirt and jeans. It's a sense of relaxation and comfort. Since Bendini provides very fashionable clothing, looking good never felt so good. Some of the Brands that Bendini carries are:
+  			</div>	
 				<li>Ed Baker</li>
 				<li>Chiari</li>
 				<li>Raffi</li>
@@ -49,19 +52,22 @@
 				<li>34 Heritage Jeans</li>
 				<li>And much more!</li>
 				<br>
+			
 				<div style="text-align:center;">To see the full collection <a href="">click here</a>
 				</div>
 			</p>
 	
 	</div>	
 	<!-- List of brands : ed baker, chiari, raffi , toscano , bresciani , enzo , intl laundry , gianni marcelo heritage 34 jeans  montechiaro and much more -->
-</div>	
+</div>
+</section>	
+
 
 <a id="homecontact"></a>
 <div class="homecontact">
 
 	<h1>
-	<%=link_to "Bendini Contact", root_path, class: "active"%>
+	<%=link_to "Bendini Contact", root_path, class: "active", id: "bendinicontact"%>
 	</h1>
 
 	<p>

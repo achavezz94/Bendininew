@@ -34,13 +34,14 @@
 		</h1>
 	</div>
     <p style="float: left;">
-		<%=image_tag("mainpage.jpg", size: "350x690", alt: "Example Image", :class => "style_image")%>
-		<%=image_tag("mainpage.jpg", size: "350x690", alt: "Example Image", :class => "style_image")%>
+		<%=image_tag("mainpage.jpg", size: "350x690", alt: "Example Image", :class => "style_image", id: "images")%>
+		<%=image_tag("mainpage.jpg", size: "350x690", alt: "Example Image", :class => "style_image", id: "images")%>
 	</p>	
 	<div class="collectionbody">
 			<div class="collectiondescription"> 
   			<p>Bendini has a variety of men's clothing and accessories. Casual cltohing is much more than just a T-shirt and jeans. It's a sense of relaxation and comfort. Since Bendini provides very fashionable clothing, looking good never felt so good. Some of the Brands that Bendini carries are:
-  			</div>	
+  			</div>
+  			<div style="padding-left: 100px;"	
 				<li>Ed Baker</li>
 				<li>Chiari</li>
 				<li>Raffi</li>
@@ -52,7 +53,7 @@
 				<li>34 Heritage Jeans</li>
 				<li>And much more!</li>
 				<br>
-			
+			</div>
 				<div style="text-align:center;">To see the full collection <a href="">click here</a>
 				</div>
 			</p>
@@ -70,9 +71,11 @@
 	<%=link_to "Bendini Contact", root_path, class: "active", id: "bendinicontact"%>
 	</h1>
 
+	<div style="float: left;">
 	<p>
 	For the best experience come visit our store, or give us a call. We can also be reached via email!
 	</p>
+</div>
 	<div class="contactinfo">
 		<p>	
 			Bendini Fine Mens Clothing <br>

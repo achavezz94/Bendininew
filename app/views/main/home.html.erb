@@ -30,8 +30,9 @@
 <div class= "homecollection">
 	<div class="Bendinicollection">
 		<h1>
-			<a href=""> Bendini Collection </a>
+			<%=link_to "Bendini Collection", root_path, id: "homecollection"%>
 		</h1>
+
 	</div>
     <p style="float: left;">
 		<%=image_tag("mainpage.jpg", size: "350x690", alt: "Example Image", :class => "style_image", id: "images")%>
@@ -40,8 +41,8 @@
 	<div class="collectionbody">
 			<div class="collectiondescription"> 
   			<p>Bendini has a variety of men's clothing and accessories. Casual cltohing is much more than just a T-shirt and jeans. It's a sense of relaxation and comfort. Since Bendini provides very fashionable clothing, looking good never felt so good. Some of the Brands that Bendini carries are:
-  			</div>
-  			<div style="padding-left: 100px;"	
+  				
+  			
 				<li>Ed Baker</li>
 				<li>Chiari</li>
 				<li>Raffi</li>
@@ -53,6 +54,7 @@
 				<li>34 Heritage Jeans</li>
 				<li>And much more!</li>
 				<br>
+			
 			</div>
 				<div style="text-align:center;">To see the full collection <a href="">click here</a>
 				</div>
@@ -71,13 +73,14 @@
 	<%=link_to "Bendini Contact", root_path, class: "active", id: "bendinicontact"%>
 	</h1>
 
-	<div style="float: left;">
+	<div style="text-align:left;">
 	<p>
 	For the best experience come visit our store, or give us a call. We can also be reached via email!
 	</p>
-</div>
+	<br>
+	</div>
 	<div class="contactinfo">
-		<p>	
+		<p style="text-align:">	
 			Bendini Fine Mens Clothing <br>
 			39 North Dean Street<br>
 			Englewood, NJ 07631<br>
@@ -131,5 +134,4 @@
 
 		  <!-- Your like button code -->
 	<div class="fb-like" data-href="https://www.facebook.com/bendinimenswear/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>	
-</div>			
-			
+</div>	

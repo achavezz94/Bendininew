@@ -22,10 +22,14 @@ body {
 .jumbotron {
 	background:none;
 	height: auto;
-	border-radius: 25px;
+	border-radius: 25px 25px 25px 25px;
 	}
 
-.carousel-inner{
+#sliders {
+	border-radius: 25px 25px 25px 25px;
+}
+
+.carousel-indicators{
 	border-radius: 25px;
 }
 

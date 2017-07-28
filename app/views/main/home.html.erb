@@ -110,26 +110,28 @@
 	<%=link_to "Bendini Contact", root_path, class: "active", id: "bendinicontact"%>
 	</h1>
 
-	<div style="text-align:left;">
+	<div style="text-align:center;">
 	<p>
 	For the best experience come visit our store, or give us a call. We can also be reached via email!
 	</p>
 	<br>
 	</div>
-	<div class="contactinfo">
-		<p style="text-align:">	
-			Bendini Fine Mens Clothing <br>
-			39 North Dean Street<br>
+
+<div class="marketing-site-content-section">
+  <div class="marketing-site-content-section-block small-order-2 medium-order-1">
+    <h3 class="marketing-site-content-section-block-header">Bendini Fine Mens Clothing</h3>
+    <p class="marketing-site-content-section-block-subheader subheader">39 North Dean Street<br>
 			Englewood, NJ 07631<br>
 			<br>
 			Tel: 201-596-6935<br>
 			Fax: 201-569-6978<br>
 			<br>
 			Email: Bendiniusa1@hotmail.com<br>
-		</p>
-	</div>
-
-		<div id="map"></div>
+			<br>Store Hours: Monday to Wednesday: 10AM - 6PM | Thursday: 10AM - 7PM | Friday to Saturday: 10AM - 6PM | Sunday: Closed
+			
+  </div>
+  <div class="marketing-site-content-section-img small-order-1 medium-order-2">
+   <div id="map"></div>
     <script>
       function initMap() {
         var uluru = {lat: 40.894971, lng: -73.973452};
@@ -146,13 +148,33 @@
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmUabYjO_8eNBurt8One-CzLbdYZvbJuQ&callback=initMap">
     </script>
-
-
-
-<div class="contactinfo">
-			<p style="text-align: center;">Store Hours: Monday to Wednesday: 10AM - 6PM | Thursday: 10AM - 7PM | Friday to Saturday: 10AM - 6PM | Sunday: Closed
-			</p>
 </div>
+  </div>
+</div>
+
+
+<!-- <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: 40.894971, lng: -73.973452};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 17,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmUabYjO_8eNBurt8One-CzLbdYZvbJuQ&callback=initMap">
+    </script>
+</div>
+-->
+
+
+
 
 <div class="facebook">
 	<p>
@@ -172,6 +194,5 @@
 		  <!-- Your like button code -->
 	<div class="fb-like" data-href="https://www.facebook.com/bendinimenswear/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>	
 </div>	
-
 
 

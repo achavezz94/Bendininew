@@ -76,7 +76,7 @@
 	</div>
     <p style="float: left;">
 		<%=image_tag("image5.jpg", size: "400x690", alt: "Example Image", :class => "style_image", id: "images")%>
-		<%=image_tag("image7.jpg", size: "400x690", alt: "Example Image", :class => "style_image", id: "images")%>
+		<%=image_tag("image8.jpg", size: "400x690", alt: "Example Image", :class => "style_image", id: "images")%>
 	</p>	
 	<div class="collectionbody">
 			<div class="collectiondescription"> 
@@ -100,46 +100,39 @@
 			</div>
 			</p>	
 	</div>
-
-  <h1> Bendini at a glance</h1>
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-  </ol>
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <%=image_tag("IMG_5603.JPG", size: "width:100%;",alt: "Example Image", id: "sliders")%>
-      <div class="carousel-caption">
-       
-      </div>
-    </div>
-    <div class="item">
-        <%=image_tag("ties.jpg", size: "width:100%;",alt: "Example Image", id: "sliders")%>
-      <div class="carousel-caption">
-        
-      </div>
-    </div>
-        <div class="item">
-        <%=image_tag("IMG_5604.JPG", size: "width:100%;",alt: "Example Image", id: "sliders")%>
-      <div class="carousel-caption">
-   
-      </div>
-    </div>
-  </div>
-
-  <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-    <span class="sr-only">Next</span>
-  </a>
+  
+<div id="glance">
+<h1 style="text-align:center;"> Bendini at a glance</h1>
 </div>
+    <div class="row">
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <%=image_tag("ties.jpg", size: "340x200", alt: "Example Image", :class => "style_image")%>
+          <div class="caption">
+            <h3>Thumbnail label</h3>
+            <p>...</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <%=image_tag("IMG_5603.JPG", size: "340x200", alt: "Example Image", :class => "style_image")%>
+          <div class="caption">
+            <h3>Thumbnail label</h3>
+            <p>...</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <%=image_tag("store4.jpg", size: "320x200", alt: "Example Image", :class => "style_image")%>
+          <div class="caption">
+            <h3>Thumbnail label</h3>
+            <p>...</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
 <a id="homecontact"></a>
@@ -220,7 +213,7 @@
 <div class="facebook">
 	<p>
 	You can also visit and follow our Facebook page!
-	<%= link_to(image_tag("facebook.jpg", size: "500x500", alt: "Example Image"), "https://www.facebook.com/bendinimenswear/")%>
+	<%= link_to(image_tag("facebook.jpg", size: "250x100", alt: "Example Image",id: "facebook1"), "https://www.facebook.com/bendinimenswear/")%>
 	</p>
 
 	<div id="fb-root"></div>

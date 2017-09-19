@@ -107,7 +107,28 @@
     <div class="row">
       <div class="col-sm-6 col-md-4">
         <div class="thumbnail">
-          <%=image_tag("ties.jpg", size: "340x200", alt: "Example Image", :class => "style_image")%>
+          <%=image_tag("ties.jpg", size: "300x200", alt: "Example Image", :id => "myImg")%>
+            <div id="myModal" class="modal">
+              <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+              <img class="modal-content" id="img01">
+                <div id="caption"></div>
+            </div>
+            <div class="caption">
+              <h3>Thumbnail label</h3>
+              <p>...</p>
+            </div>
+        </div>
+      </div>
+      
+
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+                    <%=image_tag("ties.jpg", size: "300x200", alt: "Example Image", :id => "myImg1")%>
+        <div id="myModal1" class="modal">
+          <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+         </div>
           <div class="caption">
             <h3>Thumbnail label</h3>
             <p>...</p>
@@ -116,23 +137,88 @@
       </div>
       <div class="col-sm-6 col-md-4">
         <div class="thumbnail">
-          <%=image_tag("IMG_5603.JPG", size: "340x200", alt: "Example Image", :class => "style_image")%>
+                    <%=image_tag("ties.jpg", size: "300x200", alt: "Example Image", :id => "myImg2")%>
+        <div id="myModal" class="modal">
+          <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+         </div>
           <div class="caption">
             <h3>Thumbnail label</h3>
             <p>...</p>
           </div>
         </div>
       </div>
-      <div class="col-sm-6 col-md-4">
-        <div class="thumbnail">
-          <%=image_tag("store4.jpg", size: "320x200", alt: "Example Image", :class => "style_image")%>
-          <div class="caption">
-            <h3>Thumbnail label</h3>
-            <p>...</p>
-          </div>
-        </div>
-      </div>
+
+
     </div>
+
+ <script>// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+
+ <script>// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg1');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+
+
+ <script>// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg2');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
 
 
 <a id="homecontact"></a>
@@ -228,5 +314,14 @@
 		  <!-- Your like button code -->
 	<div class="fb-like" data-href="https://www.facebook.com/bendinimenswear/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>	
 </div>	
+
+
+
+
+
+
+
+
+
 
 
